@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <!-- Text "Tên SV" -->
+    <TextView
+        android:id="@+id/textViewNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên SV"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentStart="true"/>
+
+    <!-- Input cho Tên SV -->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/textViewNameLabel"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignBaseline="@id/textViewNameLabel"/>
+
+    <!-- Text "Mã SV" -->
+    <TextView
+        android:id="@+id/textViewStudentIdLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mã SV"
+        android:layout_below="@id/textViewNameLabel"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Input cho Mã SV -->
+    <EditText
+        android:id="@+id/editTextStudentId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/textViewStudentIdLabel"
+        android:layout_below="@id/editTextName"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignBaseline="@id/textViewStudentIdLabel"/>
+
+    <!-- Text "Điểm trung bình" -->
+    <TextView
+        android:id="@+id/textViewGPALabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Điểm trung bình"
+        android:layout_below="@id/textViewStudentIdLabel"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Input cho Điểm trung bình -->
+    <EditText
+        android:id="@+id/editTextGPA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/textViewGPALabel"
+        android:layout_below="@id/editTextStudentId"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignBaseline="@id/textViewGPALabel"/>
+
+    <!-- Text "Ảnh" -->
+    <TextView
+        android:id="@+id/textViewImageLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ảnh"
+        android:layout_below="@id/textViewGPALabel"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Image cho Ảnh -->
+    <ImageView
+        android:id="@+id/imageViewAvatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextGPA"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/img"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Button "Save" -->
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_below="@id/imageViewAvatar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"/>
+
+</LinearLayout>
