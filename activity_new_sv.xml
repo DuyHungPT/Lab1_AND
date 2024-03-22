@@ -1,100 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
     android:orientation="vertical"
-    android:layout_height="match_parent">
 
-    <!-- Text "Tên SV" -->
+    >
+
     <TextView
-        android:id="@+id/textViewNameLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tên SV"
-        android:layout_marginTop="16dp"
-        android:layout_alignParentStart="true"/>
+        android:text="SẢN PHẨM"
+        android:layout_gravity="center"
 
-    <!-- Input cho Tên SV -->
+        android:layout_marginTop="150dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        />
+
+
     <EditText
-        android:id="@+id/editTextName"
+        android:id="@+id/edtTenSP"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@+id/textViewNameLabel"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_alignBaseline="@id/textViewNameLabel"/>
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
 
-    <!-- Text "Mã SV" -->
-    <TextView
-        android:id="@+id/textViewStudentIdLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Mã SV"
-        android:layout_below="@id/textViewNameLabel"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="16dp"/>
+        android:hint="Tên sản phẩm"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:paddingLeft="10dp"
+        android:drawablePadding="10dp"
 
-    <!-- Input cho Mã SV -->
+        />
+
     <EditText
-        android:id="@+id/editTextStudentId"
+        android:id="@+id/edtGiaSP"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@+id/textViewStudentIdLabel"
-        android:layout_below="@id/editTextName"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_alignBaseline="@id/textViewStudentIdLabel"/>
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
 
-    <!-- Text "Điểm trung bình" -->
-    <TextView
-        android:id="@+id/textViewGPALabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Điểm trung bình"
-        android:layout_below="@id/textViewStudentIdLabel"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="16dp"/>
+        android:hint="Giá sản phẩm"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:paddingLeft="10dp"
+        android:drawablePadding="10dp"
 
-    <!-- Input cho Điểm trung bình -->
+        />
+
+
     <EditText
-        android:id="@+id/editTextGPA"
+        android:id="@+id/edtSoLuongSP"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@+id/textViewGPALabel"
-        android:layout_below="@id/editTextStudentId"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_alignBaseline="@id/textViewGPALabel"/>
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
 
-    <!-- Text "Ảnh" -->
-    <TextView
-        android:id="@+id/textViewImageLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ảnh"
-        android:layout_below="@id/textViewGPALabel"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="16dp"/>
+        android:hint="Số lượng sản phẩm"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:paddingLeft="10dp"
+        android:drawablePadding="10dp"
 
-    <!-- Image cho Ảnh -->
-    <ImageView
-        android:id="@+id/imageViewAvatar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/editTextGPA"
-        android:layout_alignParentEnd="true"
-        android:src="@drawable/img"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="8dp"/>
+        />
 
-    <!-- Button "Save" -->
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chọn ảnh"
+            android:textSize="23dp"
+            android:layout_marginRight="90dp"
+
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <Button
+            android:id="@+id/btnUploadImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chọn file ảnh"
+            android:textSize="18dp"
+            android:textStyle="italic"
+            android:background="#08B00020"
+
+            android:layout_marginTop="20dp"
+
+            />
+    </LinearLayout>
+
     <Button
-        android:id="@+id/buttonSave"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnUPDATEup"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Save"
-        android:layout_below="@id/imageViewAvatar"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"/>
+        android:text="LƯU"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="24dp"
+
+        android:textColor="@color/white"
+        />
+
 
 </LinearLayout>

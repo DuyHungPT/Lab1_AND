@@ -9,7 +9,7 @@
     android:padding="16dp">
 
     <ImageView
-        android:id="@+id/imageViewAvatar"
+        android:id="@+id/spIMAGE"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -24,7 +24,7 @@
         android:layout_marginStart="16dp">
 
         <TextView
-            android:id="@+id/textViewName"
+            android:id="@+id/spTen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nguyen Ngoc Ngan"
@@ -32,18 +32,25 @@
             android:textStyle="bold"/>
 
         <TextView
-            android:id="@+id/textViewStudentId"
+            android:id="@+id/spId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="PH43753"
             android:textSize="16sp"/>
 
         <TextView
-            android:id="@+id/textViewGPA"
+            android:id="@+id/spGia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="9.5"
             android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/spSoLuong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:textSize="16sp"/>
+
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
